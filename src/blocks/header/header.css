@@ -1,0 +1,15 @@
+.header {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  max-width: 100%;
+  min-height: 74px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    grid-column: 1 / 4;
+    min-height: 56px;
+  }
+}

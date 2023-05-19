@@ -1,0 +1,15 @@
+.page__container {
+  display: grid;
+  grid-template-columns: minmax(19px, 1fr) minmax(282px, 880px) minmax(19px, 1fr);
+  grid-template-rows: repeat(4, minmax(min-content, max-content));
+  max-width: 1280px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 45px 0 0 0;
+}
+
+@media screen and (max-width: 320px) {
+  .page__container {
+    padding-top: 28px;
+  }
+}

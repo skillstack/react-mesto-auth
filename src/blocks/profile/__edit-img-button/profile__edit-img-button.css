@@ -1,0 +1,40 @@
+.profile__edit-img-button {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.profile__edit-img-button::after {
+  content: "";
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  outline: 1px solid #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .8);
+  background-image: url(../../../images/profile-edit-img-button.svg);
+  background-size: 26px;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+}
+
+.profile__edit-img-button:hover::after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 700px) {
+  .profile__edit-img-button {
+    margin-bottom: 26px;
+  }
+}
