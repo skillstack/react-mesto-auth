@@ -54,7 +54,9 @@ function App() {
             navigate("/");
           }
         })
-        .catch((err) => console.log(err));
+        .catch((err) => {
+          console.log(`Ошибка: ${err}`);
+        })
     }
   }, [navigate]);
 
@@ -220,7 +222,7 @@ function App() {
           />
         </Routes>
 
-        <Footer />
+        {isLoggedIn && <Footer />}
 
         {/* Редактирование фото профиля */}
 

@@ -20,8 +20,8 @@ class ApiAuth {
         email: email
       }),
     })
-      .then(res => {
-        this._checkResponse(res)
+      .then((res) => {
+        return this._checkResponse(res);
       });
   }
 
@@ -34,8 +34,8 @@ class ApiAuth {
         email: email
       }),
     })
-      .then(res => {
-        this._checkResponse(res)
+      .then((res) => {
+        return this._checkResponse(res);
       });
   }
 
@@ -46,7 +46,10 @@ class ApiAuth {
         'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,
       },
-    }).then(res => this._checkResponse(res));
+    })
+      .then((res) => {
+        return this._checkResponse(res);
+      });
   }
 }
 
