@@ -1,0 +1,13 @@
+.header__container {
+  display: flex;
+  margin: 0;
+  padding: 6px 0 0 0;
+}
+
+@media screen and (max-width: 635px) {
+  .header__container {
+    flex-direction: column-reverse;
+    align-items: end;
+    justify-content: start;
+  }
+}

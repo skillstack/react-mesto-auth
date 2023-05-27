@@ -1,0 +1,19 @@
+.auth-form__login-link {
+  display: flex;
+  justify-content: center;
+  min-width: 358px;
+  padding: 15px 0 0 0 ;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #fff;
+}
+
+@media screen and (max-width: 635px) {
+  .auth-form__login-link {
+    min-width: 260px;
+    padding-top: 20px;
+  }
+
+}

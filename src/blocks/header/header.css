@@ -1,6 +1,8 @@
 .header {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
+  display:flex;
+  justify-content: space-between;
   max-width: 100%;
   min-height: 74px;
   box-sizing: border-box;
